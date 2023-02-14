@@ -10,7 +10,7 @@ stable-diffusion
 snap
 snapd
 spiceify
-test
+i test
 
 
 ## Applications
