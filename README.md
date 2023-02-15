@@ -11,7 +11,6 @@
 <li> Neovim
 <li> emote (for keyboard shortcut emojis)
 <li> xbindkeys
-
 ### Un-Answered Questions
 How to set default applications in gnome-control-center?
 
@@ -27,7 +26,7 @@ How to set default applications in gnome-control-center?
 <li>live-server
 <li>xbindkeys
 <li>cURL
-<ol>
+</ol>
 
 ### Package Managers:
 <ol>
@@ -36,7 +35,7 @@ How to set default applications in gnome-control-center?
 <li>yarn
 <li>python
 <li>npm
-<ol>
+</ol>
 
 ### Applications
 Spotify (debian, installed via cURL)
@@ -58,7 +57,7 @@ alacritty
 <li> arduino
 <li> emote
 <li> cups (for printing? might come pre-installed with POPos)
-<ol>
+</ol>
 
 ### Other Files?
 fonts?
