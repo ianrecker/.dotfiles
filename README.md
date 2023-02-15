@@ -11,6 +11,7 @@
 <li> Neovim
 <li> emote (for keyboard shortcut emojis)
 <li> xbindkeys
+</ol>
 ### Un-Answered Questions
 How to set default applications in gnome-control-center?
 
