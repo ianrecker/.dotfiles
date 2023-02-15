@@ -17,15 +17,15 @@ How to set default applications in gnome-control-center?
 
 ### CLI Programs:
 <ol>
-<li>Neovim<li>
-<li>Stripe<li>
-<li>GH<li>
-<li>thefuck<li>
-<li>spiceify<li>
-<li>stable-diffusion<li>
-<li>live-server<li>
-<li>xbindkeys<li>
-<li>cURL<li>
+<li>Neovim
+<li>Stripe
+<li>GH
+<li>thefuck
+<li>spiceify
+<li>stable-diffusion
+<li>live-server
+<li>xbindkeys
+<li>cURL
 <ol>
 
 ### Package Managers:
