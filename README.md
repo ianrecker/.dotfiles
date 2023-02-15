@@ -3,13 +3,15 @@
 ## My Config Files Of My Workflow
 
 ### Directories:
-✅ i3
-✅ alacritty
-✅ whatTheFuck
-✅ zshrc
-Neovim
-emote (for keyboard shortcut emojis)
-xbindkeys
+<ol>
+<li> ✅ i3
+<li> ✅ alacritty
+<li> ✅ whatTheFuck
+<li> ✅ zshrc
+<li> Neovim
+<li> emote (for keyboard shortcut emojis)
+<li> xbindkeys
+<ol>
 
 ### Un-Answered Questions
 How to set default applications in gnome-control-center?
@@ -30,11 +32,11 @@ How to set default applications in gnome-control-center?
 
 ### Package Managers:
 <ol>
-<li>snap<li>
-<li>snapd<li>
-<li>yarn<li>
-<li>python<li>
-<li>npm<li>
+<li>snap
+<li>snapd
+<li>yarn
+<li>python
+<li>npm
 <ol>
 
 ### Applications
@@ -44,18 +46,20 @@ Spotify (debian, installed via cURL)
 alacritty
 
 ### Snap Packages
-Brave
-Discord
-Signal-Desktop
-Flameshot
-Postman
-insomnia
-qbittorrnet
-twilio
-gimp
-arduino
-emote
-cups (for printing? might come pre-installed with POPos)
+<ol>
+<li> Brave
+<li> Discord
+<li> Signal-Desktop
+<li> Flameshot
+<li> Postman
+<li> insomnia
+<li> qbittorrnet
+<li> twilio
+<li> gimp
+<li> arduino
+<li> emote
+<li> cups (for printing? might come pre-installed with POPos)
+<ol>
 
 ### Other Files?
 fonts?
