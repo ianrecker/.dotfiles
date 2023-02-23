@@ -27,6 +27,7 @@ How to set default applications in gnome-control-center?
 <li>live-server
 <li>xbindkeys
 <li>cURL
+<li>exa
 </ol>
 
 ### Package Managers:
