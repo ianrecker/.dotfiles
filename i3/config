@@ -218,8 +218,6 @@ for_window [class="Spotify"] move to workspace $ws10
 
 # Brave App - Microsoft Teams
 exec_always --no-startup-id $HOME/Documents/Coding-Projects/bash-scripts/runTeams-BraveApp.sh
-#exec_always --no-startup-id $HOME/Documents/Coding-Projects/bash-scripts/runSMS-BraveApp.sh
-# Google Messages - Brave App Attempt
 
 
 
