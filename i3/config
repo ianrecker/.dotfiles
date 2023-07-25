@@ -24,7 +24,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
 
 # Setting workspaces by Monitor
-exec --no-startup-id xrandr --output eDP-1 --auto --left-of HDMI-1 & xrandr --output HDMI-1 --scale .5x.5
+exec --no-startup-id xrandr --output eDP-1 --auto --left-of HDMI-1 & xrandr --output HDMI-1 --scale .75x.75
 # Command to move all workspaces to single monitor
 bindsym $mod+Shift+m exec xrandr --output HDMI-1 --off
 
@@ -147,78 +147,75 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 # Startup Applications
 
 #1
-exec gimp
+
 #2
-exec alacritty
+exec code
+
 #3
 exec brave
 
 #4
-exec gnome-terminal
+exec alacritty
+
 
 #5
-exec signal-desktop
+exec onlyoffice-desktopeditors
 
 #6
 exec nautilus
-exec gnome-control-center
 
 #7
-exec gnome-system-monitor
+exec gimp
 
-#8.
+#8
+exec vlc
 
 #9
 exec drawio
 #10
-exec spotify
+
 
 ####################################################################################
 # Setting Windows To Workspaces
 
-#Workspace 7 - Gimp
-assign [class="Gimp"] $ws7
-for_window [class="Gimp"] focus
-
 #Workspace 2 - Dev Enviornment
-assign [class="Alacritty"] $ws2
-for_window [class="Alacritty"] focus
+assign [class="code"]  $ws2
+for_window [class="code"] focus
 
 #workspace 3 - Browsing
 assign [class="Brave-browser"]  $ws3
 for_window [class="Brave-browser"] focus
 
 #Workspace 4 - Terminals
-assign [class="Gnome-terminal"] $ws4
-for_window [class="Gnome-terminal"] focus
+assign [class="Alacritty"] $ws4
+for_window [class="Alacritty"] focus
 
 
-#Workspace 5 - Coms/Chat
-assign [class="Signal"] $ws5
-for_window [class="Signal"] focus
+#Workspace 5 - Only Office
+assign [class="ONLYOFFICE Desktop Editors"] $ws5
+for_window [class="ONLYOFFICE Desktop Editors"] focus
+
 
 #Workspace 6 - Diagrams
 assign [class="draw.io"] $ws6
+for_window [class="draw.io"] focus
 
-#Workspace 7 - OPEN
 
-#Workspace 8 - System Monitor
-assign [class="Gnome-system-monitor"] $ws8
-for_window [class="Gnome-system-monitor"] focus
+# Workspace 7 - Gimp
+assign [class="Gimp"] $ws7
+for_window [class="Gimp"] focus
+
+#Workspace 8 - VLC
+assign [class="vlc"] $ws8
+for_window [class="vlc"] focus
 
 #Workspace 9 - System Controls + File Gui
-assign [class="Org.gnome.Nautilus"] $ws9
-for_window [class="Org.gnome.Nautilus"] focus
-assign [class="Gnome-control-center"] $ws9
-for_window [class="Gnome-control-center"] focus
+assign [class="Nautilus"] $ws9
+for_window [class="Nautilus"] focus
 
-#Workspace 10 - Spotify Music
-assign [class='Spotify'] $ws10
-for_window [class="Spotify"] move to workspace $ws10
-
-# Brave App - Microsoft Teams
-exec_always --no-startup-id $HOME/Documents/Coding-Projects/bash-scripts/runTeams-BraveApp.sh
-
+#Workspace 10 - System Config Printer
+assign [class='system-config-printer'] $ws10
+for_window [class='system-config-printer'] focus
 
 
 ####################################################################################
@@ -260,9 +257,10 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status --config ~/.i3status.conf
-        tray_output none
+    status_command i3status -c ~/.config/i3status.conf
+    tray_output none
 }
+
 # class                 border  backgr. text    indicator child_border
 client.focused          #FFFF00 #a229ff #ffffff #ffffff   #FFFF00
 client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
@@ -271,16 +269,15 @@ client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 client.background       #ffffff
-exec always nitrogen --restore
-
 
 
 
 # Suspend
-bindsym $mod+Shift+period exec systemctl suspend
+bindsym $mod+ctrl+period exec systemctl suspend
 
 # Screenshot Hot Keys
-bindsym Print exec flameshot full -p /home/ianrecker/Pictures/Screenshots
-#bindsym Shift+Print exec flameshot gui -p /home/ianrecker/Pictures/Screenshots
-# Shortcut To Launch New Terminals
-bindsym $mod+t exec alacritty
+bindsym Print exec flameshot full -p /home/ian/Pictures/Screenshots
+bindsym Shift+Print exec flameshot gui -p /home/ian/Pictures/Screenshots
+
+
+# exec --no-startup-id /usr/lib/polkit-dumb-agent
